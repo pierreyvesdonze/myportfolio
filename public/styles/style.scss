@@ -30,6 +30,15 @@ ul li {
     list-style-type: none;
 }
 
+a {
+    font-weight: 400;
+    color: var(--primary-color);
+    text-decoration: none;
+    :visited {
+        color: var(--primary-color);
+    }
+}
+
 h1,
 h2,
 h3,
@@ -136,10 +145,9 @@ SECTION SKILLS
   }
 }
 
-.specs button:hover,
+
 .specs button:focus {
-  background-color: var(--font-color-span);
-  box-shadow: inset 0px 0px 6px 2px #140605;
+  box-shadow: inset 0px 0px 4px 2px #140605;
   transition: all 0.1s ease-in-out;
   animation: flash 2s;
 }
@@ -289,4 +297,31 @@ SECTION CV
   &:hover {
     color: var(--font-color-span);
   }
+}
+
+/*
+***********************************
+SECTION WORK
+***********************************
+*/
+.MuiPaper-root {
+    background: transparent !important;
+}
+
+/*
+***********************************
+SECTION CONTACT
+***********************************
+*/
+.card {
+    margin-top: 20%;
+    @include md {
+        margin-top: 10%;
+    }
+    @include lg {
+        margin-top: 10%;
+    }
+    @include xl {
+        margin-top: 10%;
+    }
 }

@@ -33,7 +33,6 @@ export default function Skills() {
         'heart': [
             'Programmation',
             'Musique',
-            'Sport',
             'Cinéma',
             'Jeux vidéos',
             'Cuisine',

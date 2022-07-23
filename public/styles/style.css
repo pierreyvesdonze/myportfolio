@@ -34,6 +34,16 @@ ul li {
   list-style-type: none;
 }
 
+a {
+  font-weight: 400;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a :visited {
+  color: var(--primary-color);
+}
+
 h1,
 h2,
 h3,
@@ -166,11 +176,9 @@ SECTION SKILLS
   }
 }
 
-.specs button:hover,
 .specs button:focus {
-  background-color: var(--font-color-span);
-  -webkit-box-shadow: inset 0px 0px 6px 2px #140605;
-          box-shadow: inset 0px 0px 6px 2px #140605;
+  -webkit-box-shadow: inset 0px 0px 4px 2px #140605;
+          box-shadow: inset 0px 0px 4px 2px #140605;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   -webkit-animation: flash 2s;
@@ -365,5 +373,41 @@ SECTION CV
 
 .main-cv a:hover {
   color: var(--font-color-span);
+}
+
+/*
+***********************************
+SECTION WORK
+***********************************
+*/
+.MuiPaper-root {
+  background: transparent !important;
+}
+
+/*
+***********************************
+SECTION CONTACT
+***********************************
+*/
+.card {
+  margin-top: 20%;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .card {
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  .card {
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card {
+    margin-top: 10%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
