@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Redirect } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -6,15 +7,18 @@ import Typography from '@mui/material/Typography';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import SpeedDial from '@mui/material/SpeedDial';
+import SpeedDialIcon from '@mui/material/SpeedDialIcon';
+import SpeedDialAction from '@mui/material/SpeedDialAction';
+import ImageIcon from '@mui/icons-material/Image';
 
-const bull = (
-    <Box
-        component="span"
-        sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    >
-        •
-    </Box>
-);
+const secretLink = () => {
+    return window.location.href = 'https://pydonze.fr/mylife/public/';
+}
+
+const actions = [
+    { icon: <ImageIcon />, name: 'Mes travaux artistiques'}
+];
 
 export default function BasicCard() {
     return (
@@ -37,6 +41,23 @@ export default function BasicCard() {
                     </Typography>
                 </CardContent>
             </Card>
+
+            <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+                <SpeedDial
+                    ariaLabel="SpeedDial basic example"
+                    sx={{ position: 'absolute', bottom: 90, right: 16 }}
+                    icon={<SpeedDialIcon />}
+                >
+                    {actions.map((action) => (
+                        <SpeedDialAction
+                            key={action.name}
+                            icon={action.icon}
+                            tooltipTitle={action.name}
+                            onClick={secretLink}
+                        />
+                    ))}
+                </SpeedDial>
+            </Box>
         </>
     );
 }

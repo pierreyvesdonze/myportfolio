@@ -145,10 +145,9 @@ SECTION SKILLS
   }
 }
 
-.specs button:hover,
+
 .specs button:focus {
-  background-color: var(--font-color-span);
-  box-shadow: inset 0px 0px 6px 2px #140605;
+  box-shadow: inset 0px 0px 4px 2px #140605;
   transition: all 0.1s ease-in-out;
   animation: flash 2s;
 }
