@@ -45,7 +45,6 @@ h3,
 h4,
 ul li,
 p,
-a
 .tab-label {
     color: var(--main-color) !important;
     font-family: "Montserrat", sans-serif;
@@ -308,4 +307,22 @@ SECTION WORK
 */
 .MuiPaper-root {
     background: transparent !important;
+}
+
+/*
+***********************************
+SECTION CONTACT
+***********************************
+*/
+.card {
+    margin-top: 20%;
+    @include md {
+        margin-top: 10%;
+    }
+    @include lg {
+        margin-top: 10%;
+    }
+    @include xl {
+        margin-top: 10%;
+    }
 }
