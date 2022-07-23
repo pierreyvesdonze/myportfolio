@@ -30,12 +30,22 @@ ul li {
     list-style-type: none;
 }
 
+a {
+    font-weight: 400;
+    color: var(--primary-color);
+    text-decoration: none;
+    :visited {
+        color: var(--primary-color);
+    }
+}
+
 h1,
 h2,
 h3,
 h4,
 ul li,
 p,
+a
 .tab-label {
     color: var(--main-color) !important;
     font-family: "Montserrat", sans-serif;
@@ -289,4 +299,13 @@ SECTION CV
   &:hover {
     color: var(--font-color-span);
   }
+}
+
+/*
+***********************************
+SECTION WORK
+***********************************
+*/
+.MuiPaper-root {
+    background: transparent !important;
 }
