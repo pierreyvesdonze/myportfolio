@@ -36,11 +36,7 @@ export default function Presentation() {
                         <li>
                             Signe astrologique : 🐟
                         </li>
-                        <li>
-                            Signe des contrats : Oui::class !
-                        </li>
                     </ul>
-
                 </div>
             </div>
         </>

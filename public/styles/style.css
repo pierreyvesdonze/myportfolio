@@ -99,4 +99,150 @@ PRESENTATION
   line-height: 2em;
   font-weight: 400;
 }
+
+/*
+***********************************
+SECTION SKILLS
+***********************************
+*/
+.skills-buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills-buttons-container:hover {
+  background-color: var(--background-section-skills);
+}
+
+.specs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+  .specs {
+    padding-top: 10% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .specs {
+    padding-top: 10% !important;
+  }
+}
+
+/*BUTTONS*/
+.specs button {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  -webkit-box-shadow: inset 0px 0px 12px 3px #140605;
+          box-shadow: inset 0px 0px 12px 3px #140605;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+  .specs button {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .specs button {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.specs button:hover,
+.specs button:focus {
+  background-color: var(--font-color-span);
+  -webkit-box-shadow: inset 0px 0px 6px 2px #140605;
+          box-shadow: inset 0px 0px 6px 2px #140605;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-animation: flash 2s;
+          animation: flash 2s;
+}
+
+/*description*/
+.description-specs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  width: 600px;
+  height: 400px;
+}
+
+.description ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 400px;
+}
+
+.description ul li {
+  font-size: 2em;
+  font-weight: 200;
+  -webkit-transition: all 4s ease-in-out;
+  transition: all 4s ease-in-out;
+  color: var(--font-color-text-light);
+  text-shadow: 2px 2px 2px black;
+}
+
+.gear,
+.heart,
+.brain,
+.tongue,
+.muscle {
+  width: 100px;
+  height: 100px;
+}
+
+.muscle {
+  background: url(../images/muscle.png) no-repeat;
+  background-size: contain;
+}
+
+.tongue {
+  background: url(../images/tongue.png) no-repeat;
+  background-size: contain;
+}
+
+.gear {
+  background: url(../images/gear.png) no-repeat;
+  background-size: contain;
+}
+
+.heart {
+  background: url(../images/heart.png) no-repeat;
+  background-size: contain;
+}
+
+.brain {
+  background: url(../images/brain.png) no-repeat;
+  background-size: contain;
+}
 /*# sourceMappingURL=style.css.map */
