@@ -160,7 +160,6 @@ SECTION SKILLS
 
 .description ul {
   flex-wrap: wrap;
-  //text-align: justify;
   height: 400px;
 }
 
@@ -204,4 +203,90 @@ SECTION SKILLS
 .brain {
   background: url(../images/brain.png) no-repeat;
   background-size: contain;
+}
+
+/*
+***********************************
+SECTION CV
+***********************************
+*/
+
+#cvScrollspy {
+  display: flex;
+  &:hover {
+    background-color: var(--background-section-cv);
+  }
+  @include xs {
+    height: 100vh;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  @include sm {
+    height: 100vh;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+}
+
+#cvScrollspy h2 {
+  font-size: 1.2em;
+  color: var(--font-color-text-light);
+}
+
+#cvScrollspy h3 {
+  font-size: 1.2em;
+}
+
+#cvScrollspy h3:nth-of-type(1) {
+  @include xs {
+    margin-top: 2em;
+  }
+  @include sm {
+    margin-top: 2em;
+  }
+}
+
+.cv-left,
+.cv-right {
+  width: 50%;
+  flex-wrap: wrap;
+  color: var(--font-color-text-light);
+  font-weight: 200;
+  font-size: 1.2em;
+  h3 {
+    color: var(--primary-color) !important;
+  }
+  @include xs {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  @include sm {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
+.cv-left span,
+.cv-right span {
+  color: var(--font-color-span);
+  font-size: 1.3em;
+  font-weight: 400;
+  @include xs {
+    font-size: 1.1em;
+  }
+  @include sm {
+    font-size: 1.1em;
+  }
+}
+
+.main-cv a {
+  color: var(--font-color-link);
+  text-shadow: 1px 1px 3px black;
+  font-size: 1.2em;
+  font-weight: 200;
+  &:hover {
+    color: var(--font-color-span);
+  }
 }

@@ -245,4 +245,125 @@ SECTION SKILLS
   background: url(../images/brain.png) no-repeat;
   background-size: contain;
 }
+
+/*
+***********************************
+SECTION CV
+***********************************
+*/
+#cvScrollspy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#cvScrollspy:hover {
+  background-color: var(--background-section-cv);
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+  #cvScrollspy {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-y: scroll;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #cvScrollspy {
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-y: scroll;
+  }
+}
+
+#cvScrollspy h2 {
+  font-size: 1.2em;
+  color: var(--font-color-text-light);
+}
+
+#cvScrollspy h3 {
+  font-size: 1.2em;
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+  #cvScrollspy h3:nth-of-type(1) {
+    margin-top: 2em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #cvScrollspy h3:nth-of-type(1) {
+    margin-top: 2em;
+  }
+}
+
+.cv-left,
+.cv-right {
+  width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: var(--font-color-text-light);
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+.cv-left h3,
+.cv-right h3 {
+  color: var(--primary-color) !important;
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+  .cv-left,
+  .cv-right {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .cv-left,
+  .cv-right {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
+.cv-left span,
+.cv-right span {
+  color: var(--font-color-span);
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+  .cv-left span,
+  .cv-right span {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .cv-left span,
+  .cv-right span {
+    font-size: 1.1em;
+  }
+}
+
+.main-cv a {
+  color: var(--font-color-link);
+  text-shadow: 1px 1px 3px black;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+.main-cv a:hover {
+  color: var(--font-color-span);
+}
 /*# sourceMappingURL=style.css.map */
