@@ -99,6 +99,10 @@ APP
 PRESENTATION
 ******************************************
 */
+.presentation {
+  overflow-y: scroll !important;
+}
+
 .presentation-title {
   text-align: center;
   font-weight: 400;

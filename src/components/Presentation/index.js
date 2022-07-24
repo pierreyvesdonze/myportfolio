@@ -3,7 +3,7 @@ import * as React from 'react';
 export default function Presentation() {
     
     return (
-        <>
+        <div className='presentation'>
             <h1 className='presentation-title'>
                 Bonjour, je suis <span>Pierre-Yves Donzé</span>, développeur web, bienvenue sur mon portfolio !
             </h1>
@@ -40,6 +40,6 @@ export default function Presentation() {
                     </ul>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
