@@ -21,12 +21,13 @@ GENERAL
 ******************************************
 */
 html {
-  height: 100vh;
-  overflow-y: hidden;
+  overflow-y: scroll;
+  height: 105vh;
   background: var(--body-bg);
 }
 
 body {
+  overflow-y: scroll;
   margin: 0;
 }
 
@@ -69,7 +70,7 @@ APP
 ******************************************
 */
 .app {
-  overflow-y: scroll;
+  overflow-y: auto;
   max-width: 65%;
   margin: auto;
   border: solid 2px var(--main-color);
