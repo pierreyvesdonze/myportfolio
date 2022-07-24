@@ -79,7 +79,7 @@ export default function CustomizedAccordions() {
                     <Typography>
                         Réalisé avec Symfony et Javascript ce site permet à l'utilisateur enregistré de créer ses propres recettes de cuisine, de créer des liste de courses et de rechercher des recettes.
                         <br />
-                        Plusieurs fonctions de recherche ont été implémentées, dont une fonction de recherche par ingrédient pour que l'utilisateur puisse trouver des recettes en fonction de ce dont il dispose (dans cette démo les ingrédients sont très limitès).
+                        Plusieurs fonctions de recherche ont été implémentées, dont une fonction de recherche par ingrédient pour que l'utilisateur puisse trouver des recettes en fonction de ce dont il dispose (dans cette démo les ingrédients sont très limités).
                         <br />
                         <br />
                         <a href='https://pydonze.fr/myfood/public/' target='_blank'>Visiter le site</a>
@@ -94,7 +94,7 @@ export default function CustomizedAccordions() {
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Catshop est un faux site e-commerce réalisé avec Symfony. Le but était un entraînement à enregistrer des données en session, les retrouver après login mais aussi de créer un tunnel d'achat (jusqu'à un faux procédé de paiement).
+                        Catshop est un faux site e-commerce réalisé avec Symfony. Le but était un entraînement pour apprendre à enregistrer des données en session, les retrouver après login mais aussi de créer un tunnel d'achat (jusqu'à un faux procédé de paiement).
                         <br />
                         <br />
                         <a href='https://pydonze.fr/catshop/public/' target='_blank'>Visiter le site</a>
