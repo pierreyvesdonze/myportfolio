@@ -21,7 +21,7 @@ GENERAL
 ******************************************
 */
 html {
-  overflow-y: hidden;
+  overflow-y: scroll;
   height: 105vh;
   background: var(--body-bg);
 }
