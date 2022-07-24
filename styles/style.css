@@ -21,7 +21,7 @@ GENERAL
 ******************************************
 */
 html {
-  overflow-y: scroll;
+  overflow-y: hidden;
   height: 105vh;
   background: var(--body-bg);
 }
@@ -70,13 +70,13 @@ APP
 ******************************************
 */
 .app {
+  height: 80vh;
   overflow-y: auto;
   max-width: 65%;
   margin: auto;
   border: solid 2px var(--main-color);
   border-radius: 10px;
   margin-top: 7%;
-  height: 80vh;
 }
 
 @media (min-width: 300px) and (max-width: 576px) {
