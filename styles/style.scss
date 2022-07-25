@@ -17,7 +17,7 @@ GENERAL
 ******************************************
 */
 html {
-    overflow-y: scroll;
+    overflow-y: hidden;
     height: 105vh;
     background: var(--body-bg);
 }
@@ -88,11 +88,10 @@ APP
 PRESENTATION
 ******************************************
 */
-// .presentation {
-//     border: solid 1px white;
-//     height: 500px !important;
-//     overflow-y: scroll;
-// }
+.presentation {
+    height: 800px !important;
+    overflow-y: scroll;
+}
 
 // .id-container {
 //     height: 500px;

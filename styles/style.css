@@ -21,7 +21,7 @@ GENERAL
 ******************************************
 */
 html {
-  overflow-y: scroll;
+  overflow-y: hidden;
   height: 105vh;
   background: var(--body-bg);
 }
@@ -99,6 +99,11 @@ APP
 PRESENTATION
 ******************************************
 */
+.presentation {
+  height: 800px !important;
+  overflow-y: scroll;
+}
+
 .presentation-title {
   text-align: center;
   font-weight: 400;
