@@ -233,15 +233,17 @@ SECTION CV
         background-color: var(--background-section-cv);
     }
     @include xs {
-        height: 800px;
+        height: 1200px;
         flex-direction: column;
         overflow-y: scroll;
+        margin-bottom: 100px;
     }
-
+    
     @include sm {
-        height: 800px;
+        height: 1200px;
         flex-direction: column;
         overflow-y: scroll;
+        margin-bottom: 100px;
     }
 }
 

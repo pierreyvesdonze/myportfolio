@@ -285,23 +285,25 @@ SECTION CV
 
 @media (min-width: 300px) and (max-width: 576px) {
   #cvScrollspy {
-    height: 800px;
+    height: 1200px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: scroll;
+    margin-bottom: 100px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
   #cvScrollspy {
-    height: 800px;
+    height: 1200px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: scroll;
+    margin-bottom: 100px;
   }
 }
 
