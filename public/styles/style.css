@@ -21,13 +21,12 @@ GENERAL
 ******************************************
 */
 html {
-  overflow-y: scroll;
-  height: 100vh;
+  overflow-y: hidden;
+  height: 105vh;
   background: var(--body-bg);
 }
 
 body {
-  overflow-y: scroll;
   margin: 0;
 }
 
@@ -70,13 +69,13 @@ APP
 ******************************************
 */
 .app {
+  height: 80vh;
   overflow-y: auto;
   max-width: 65%;
   margin: auto;
   border: solid 2px var(--main-color);
   border-radius: 10px;
   margin-top: 7%;
-  height: 80vh;
 }
 
 @media (min-width: 300px) and (max-width: 576px) {
@@ -100,6 +99,20 @@ APP
 PRESENTATION
 ******************************************
 */
+@media (min-width: 300px) and (max-width: 576px) {
+  .presentation {
+    height: 800px !important;
+    overflow-y: scroll;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .presentation {
+    height: 800px !important;
+    overflow-y: scroll;
+  }
+}
+
 .presentation-title {
   text-align: center;
   font-weight: 400;
@@ -272,23 +285,25 @@ SECTION CV
 
 @media (min-width: 300px) and (max-width: 576px) {
   #cvScrollspy {
-    height: 100vh;
+    height: 1200px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: scroll;
+    margin-bottom: 100px;
   }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
   #cvScrollspy {
-    height: 100vh;
+    height: 1200px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     overflow-y: scroll;
+    margin-bottom: 100px;
   }
 }
 
