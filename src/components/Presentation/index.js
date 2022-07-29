@@ -1,38 +1,38 @@
 import * as React from 'react';
 
 export default function Presentation() {
-    
+
     return (
         <div className='presentation'>
             <h1 className='presentation-title'>
-                Bonjour, je suis <span>Pierre-Yves Donzé</span>, développeur web, bienvenue sur mon portfolio !
+                <span>Pierre-Yves Donzé</span>
+                <br />
+                développeur web
             </h1>
 
             <br />
 
             <div class="id-container">
+                {/* Résumé */}
                 <div class="infos">
                     <ul class="list">
                         <li>
-                            Genre : masculin
+                            Genre : <span>masculin</span>
                         </li>
                         <li>
-                            Âge : 39 (<span>ans</span>, <span>pour l'instant</span>)
+                            Âge : <span>39 ans</span>
                         </li>
                         <li>
-                            Cheveux : bof
+                            Localisation : <span>Nancy (54) ou Full Remote</span>
                         </li>
                         <li>
-                            Yeux : ouverts (<span>ou marron</span>)
+                            Spécialisation : <span>Symfony (React en cours)</span>
                         </li>
                         <li>
-                            Humeur : variable
+                            Expérience : <span>Autodidacte + en entreprise</span>
                         </li>
                         <li>
-                            Humour : variable
-                        </li>
-                        <li>
-                            Signes particuliers : [<span>RQTH</span>]
+                            Signes particuliers : <span>RQTH</span>
                         </li>
                         <li>
                             Signe astrologique : 🐟
