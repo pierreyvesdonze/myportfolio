@@ -9,10 +9,11 @@ VARIABLES
 ******************************************
 */
 :root {
-  --body-bg: linear-gradient(180deg, #abbed4 22%, #283f53 100%);
+  --body-bg: linear-gradient(180deg, #99c1ab 0%, #4a8094 100%);
   --main-color: white;
-  --primary-color: #1f2b3d;
-  --font-color-span: #2f4361;
+  --primary-color: #4c555a;
+  --secondary-color: #9baab27c;
+  --font-color-span: #5c5f99;
 }
 
 /*
@@ -193,6 +194,7 @@ SECTION SKILLS
 .specs button:focus {
   -webkit-box-shadow: inset 0px 0px 4px 2px #140605;
           box-shadow: inset 0px 0px 4px 2px #140605;
+  background-color: var(--secondary-color);
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   -webkit-animation: flash 2s;
@@ -396,6 +398,21 @@ SECTION CV
 SECTION WORK
 ***********************************
 */
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work-link {
+  margin-right: 1.5em;
+}
+
 .MuiPaper-root {
   background: transparent !important;
 }
@@ -406,6 +423,7 @@ SECTION CONTACT
 ***********************************
 */
 .card {
+  background-color: var(--secondary-color) !important;
   margin-top: 20%;
 }
 
