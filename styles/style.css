@@ -49,7 +49,7 @@ span {
   color: var(--primary-color);
 }
 
-.tab-label[aria-selected="true"] {
+.tab-label[aria-selected=true] {
   color: var(--primary-color) !important;
 }
 
@@ -67,7 +67,6 @@ APP
   margin-top: 7%;
   height: 80vh;
 }
-
 @media (min-width: 300px) and (max-width: 576px) {
   .app {
     border: none;
@@ -75,7 +74,6 @@ APP
     height: 100vh;
   }
 }
-
 @media (min-width: 576px) and (max-width: 768px) {
   .app {
     border: none;
@@ -98,5 +96,4 @@ PRESENTATION
   font-size: 1.3em !important;
   line-height: 2em;
   font-weight: 400;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

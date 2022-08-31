@@ -18,6 +18,7 @@ VARIABLES
 GENERAL
 ******************************************
 */
+
 html {
     overflow-y: hidden;
     height: 105vh;
@@ -139,6 +140,18 @@ SECTION SKILLS
 }
 
 /*BUTTONS*/
+.custom-btn {
+    background: transparent;
+    padding: 11px;
+    border: solid 1px white;
+    border-radius: 6px;
+    a {
+        &:hover {
+            color: white;
+            transition: ease-in .2s;
+        }
+    }
+}
 
 .specs button {
     border: none;
@@ -330,6 +343,57 @@ SECTION WORK
 .MuiPaper-root {
     background: transparent !important;
 }
+
+.flex-work {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.github-link {
+    margin-top: 10px;
+}
+
+.flex-typography {
+    width: 50%;
+    text-align: justify;
+    @include sm {
+        width: 100%;
+    }
+    @include xs {
+        width: 100%;
+    }
+}
+
+.work-img {
+    width: 50%;
+    margin-left: 10%;
+     @include sm {
+        display: none;
+    }
+    @include xs {
+        display: none;
+    } 
+}
+
+.work-foetus {
+    background: url(../images/foetus.png) no-repeat;
+    background-size: contain;
+    
+}
+.work-myfood {
+    background: url(../images/myfood.png) no-repeat;
+    background-size: contain;
+}
+.work-catshop {
+    background: url(../images/catshop.png) no-repeat;
+    background-size: contain;
+}
+.work-mycontacts {
+    background: url(../images/mycontacts.png) no-repeat;
+    background-size: contain;
+}
+
 
 /*
 ***********************************

@@ -40,7 +40,6 @@ a {
   color: var(--primary-color);
   text-decoration: none;
 }
-
 a :visited {
   color: var(--primary-color);
 }
@@ -60,7 +59,7 @@ span {
   color: var(--primary-color);
 }
 
-.tab-label[aria-selected="true"] {
+.tab-label[aria-selected=true] {
   color: var(--primary-color) !important;
 }
 
@@ -78,7 +77,6 @@ APP
   border-radius: 10px;
   margin-top: 7%;
 }
-
 @media (min-width: 300px) and (max-width: 576px) {
   .app {
     border: none;
@@ -86,7 +84,6 @@ APP
     height: 100vh;
   }
 }
-
 @media (min-width: 576px) and (max-width: 768px) {
   .app {
     border: none;
@@ -106,7 +103,6 @@ PRESENTATION
     overflow-y: scroll;
   }
 }
-
 @media (min-width: 576px) and (max-width: 768px) {
   .presentation {
     height: 800px !important;
@@ -131,34 +127,22 @@ SECTION SKILLS
 ***********************************
 */
 .skills-buttons-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .skills-buttons-container:hover {
   background-color: var(--background-section-skills);
 }
 
 .specs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 @media (min-width: 300px) and (max-width: 576px) {
   .specs {
     padding-top: 10% !important;
   }
 }
-
 @media (min-width: 576px) and (max-width: 768px) {
   .specs {
     padding-top: 10% !important;
@@ -166,24 +150,31 @@ SECTION SKILLS
 }
 
 /*BUTTONS*/
+.custom-btn {
+  background: transparent;
+  padding: 11px;
+  border: solid 1px white;
+  border-radius: 6px;
+}
+.custom-btn a:hover {
+  color: white;
+  transition: ease-in 0.2s;
+}
+
 .specs button {
   border: none;
   border-radius: 10px;
   outline: none;
   padding: 10px;
-  -webkit-box-shadow: inset 0px 0px 12px 3px #140605;
-          box-shadow: inset 0px 0px 12px 3px #140605;
-  -webkit-transition: all 0.1s ease-in-out;
+  box-shadow: inset 0px 0px 12px 3px #140605;
   transition: all 0.1s ease-in-out;
 }
-
 @media (min-width: 300px) and (max-width: 576px) {
   .specs button {
     width: 50px;
     height: 50px;
   }
 }
-
 @media (min-width: 576px) and (max-width: 768px) {
   .specs button {
     width: 50px;
@@ -192,10 +183,8 @@ SECTION SKILLS
 }
 
 .specs button:focus {
-  -webkit-box-shadow: inset 0px 0px 4px 2px #140605;
-          box-shadow: inset 0px 0px 4px 2px #140605;
+  box-shadow: inset 0px 0px 4px 2px #140605;
   background-color: var(--secondary-color);
-  -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   -webkit-animation: flash 2s;
           animation: flash 2s;
@@ -203,37 +192,29 @@ SECTION SKILLS
 
 /*description*/
 .description-specs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 32px;
 }
 
 .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: auto;
   width: 600px;
   height: 400px;
 }
 
 .description ul {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   height: 400px;
 }
 
 .description ul li {
   font-size: 2em;
   font-weight: 200;
-  -webkit-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
   color: var(--font-color-text-light);
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
 .gear,
@@ -276,34 +257,23 @@ SECTION CV
 ***********************************
 */
 #cvScrollspy {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 #cvScrollspy:hover {
   background-color: var(--background-section-cv);
 }
-
 @media (min-width: 300px) and (max-width: 576px) {
   #cvScrollspy {
     height: 1200px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     overflow-y: scroll;
     margin-bottom: 100px;
   }
 }
-
 @media (min-width: 576px) and (max-width: 768px) {
   #cvScrollspy {
     height: 1200px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     overflow-y: scroll;
     margin-bottom: 100px;
   }
@@ -323,7 +293,6 @@ SECTION CV
     margin-top: 2em;
   }
 }
-
 @media (min-width: 576px) and (max-width: 768px) {
   #cvScrollspy h3:nth-of-type(1) {
     margin-top: 2em;
@@ -333,29 +302,25 @@ SECTION CV
 .cv-left,
 .cv-right {
   width: 50%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   color: var(--font-color-text-light);
   font-weight: 200;
   font-size: 1.2em;
 }
-
 .cv-left h3,
 .cv-right h3 {
   color: var(--primary-color) !important;
 }
-
 @media (min-width: 300px) and (max-width: 576px) {
   .cv-left,
-  .cv-right {
+.cv-right {
     width: 100%;
     font-size: 1em;
   }
 }
-
 @media (min-width: 576px) and (max-width: 768px) {
   .cv-left,
-  .cv-right {
+.cv-right {
     width: 100%;
     font-size: 1em;
   }
@@ -367,17 +332,15 @@ SECTION CV
   font-size: 1.3em;
   font-weight: 400;
 }
-
 @media (min-width: 300px) and (max-width: 576px) {
   .cv-left span,
-  .cv-right span {
+.cv-right span {
     font-size: 1.1em;
   }
 }
-
 @media (min-width: 576px) and (max-width: 768px) {
   .cv-left span,
-  .cv-right span {
+.cv-right span {
     font-size: 1.1em;
   }
 }
@@ -388,7 +351,6 @@ SECTION CV
   font-size: 1.2em;
   font-weight: 200;
 }
-
 .main-cv a:hover {
   color: var(--font-color-span);
 }
@@ -399,14 +361,9 @@ SECTION WORK
 ***********************************
 */
 .card-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .work-link {
@@ -415,6 +372,66 @@ SECTION WORK
 
 .MuiPaper-root {
   background: transparent !important;
+}
+
+.flex-work {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.github-link {
+  margin-top: 10px;
+}
+
+.flex-typography {
+  width: 50%;
+  text-align: justify;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .flex-typography {
+    width: 100%;
+  }
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  .flex-typography {
+    width: 100%;
+  }
+}
+
+.work-img {
+  width: 50%;
+  margin-left: 10%;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .work-img {
+    display: none;
+  }
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  .work-img {
+    display: none;
+  }
+}
+
+.work-foetus {
+  background: url(../images/foetus.png) no-repeat;
+  background-size: contain;
+}
+
+.work-myfood {
+  background: url(../images/myfood.png) no-repeat;
+  background-size: contain;
+}
+
+.work-catshop {
+  background: url(../images/catshop.png) no-repeat;
+  background-size: contain;
+}
+
+.work-mycontacts {
+  background: url(../images/mycontacts.png) no-repeat;
+  background-size: contain;
 }
 
 /*
@@ -426,22 +443,18 @@ SECTION CONTACT
   background-color: var(--secondary-color) !important;
   margin-top: 20%;
 }
-
 @media (min-width: 768px) and (max-width: 992px) {
   .card {
     margin-top: 10%;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1280px) {
   .card {
     margin-top: 10%;
   }
 }
-
 @media (min-width: 1280px) {
   .card {
     margin-top: 10%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

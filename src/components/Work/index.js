@@ -43,7 +43,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 export default function CustomizedAccordions() {
-    const [expanded, setExpanded] = React.useState('panel1');
+    const [expanded, setExpanded] = React.useState();
 
     const handleChange = (panel) => (event, newExpanded) => {
         setExpanded(newExpanded ? panel : false);
@@ -57,18 +57,24 @@ export default function CustomizedAccordions() {
                     <Typography><span>Petit Foetus</span></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                        Démo réalisée en Symfony pour une artiste tatoueuse. L'application dispose d'un back-office pour que l'utilisateur puisse gérer ses images et ses données (le back-office n'est pas accessible publiquement).
+                    <div className="flex-work">
+                        <div className="flex-typography">
+                            <Typography>
+                                Démo réalisée en Symfony pour une artiste tatoueuse. L'application dispose d'un back-office pour que l'utilisateur puisse gérer ses images et ses données (le back-office n'est pas accessible publiquement).
 
-                        <br />
-                        <br />
-                        Le site dispose aussi d'un convertisseur d'images afin de contrôler, réduire et optimiser la taille des fichiers envoyés.
-                        <br />
-                        <br />
-                        <a href="https://pydonze.fr/foetus/public/home" target='_blank'>Lien vers le site</a>
-                        <br />
-                        <a href="https://github.com/pierreyvesdonze/foetus" target='_blank'>Lien vers le dépôt Github</a>
-                    </Typography>
+                                <br />
+                                <br />
+                                Le site dispose aussi d'un convertisseur d'images afin de contrôler, réduire et optimiser la taille des fichiers envoyés.
+                                <br />
+                                <br />
+                                <a href="https://pydonze.fr/foetus/public/home" target='_blank'>Lien vers le site</a>
+                                <br />
+                                <a href="https://github.com/pierreyvesdonze/foetus" target='_blank' className='github-link'>Lien vers le dépôt Github</a>
+                            </Typography>
+                        </div>
+                        <div className='work-img work-foetus'>
+                        </div>
+                    </div>
                 </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -76,16 +82,22 @@ export default function CustomizedAccordions() {
                     <Typography><span>MyFood</span></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                        Réalisé avec Symfony et Javascript ce site permet à l'utilisateur enregistré de créer ses propres recettes de cuisine, de créer des liste de courses et de rechercher des recettes.
-                        <br />
-                        Plusieurs fonctions de recherche ont été implémentées, dont une fonction de recherche par ingrédient pour que l'utilisateur puisse trouver des recettes en fonction de ce dont il dispose (dans cette démo les ingrédients sont très limités).
-                        <br />
-                        <br />
-                        <a href='https://pydonze.fr/myfood/public/' target='_blank'>Visiter le site</a>
-                        <br />
-                        <a href='https://github.com/pierreyvesdonze/myfood' target='_blank'>Visiter le dépôt Github</a>
-                    </Typography>
+                    <div className="flex-work">
+                        <div className="flex-typography">
+                            <Typography>
+                                Réalisé avec Symfony et Javascript ce site permet à l'utilisateur enregistré de créer ses propres recettes de cuisine, de créer des liste de courses et de rechercher des recettes.
+                                <br />
+                                Plusieurs fonctions de recherche ont été implémentées, dont une fonction de recherche par ingrédient pour que l'utilisateur puisse trouver des recettes en fonction de ce dont il dispose (dans cette démo les ingrédients sont très limités).
+                                <br />
+                                <br />
+                                <a href='https://pydonze.fr/myfood/public/' target='_blank'>Visiter le site</a>
+                                <br />
+                                <a href='https://github.com/pierreyvesdonze/myfood' target='_blank'>Visiter le dépôt Github</a>
+                            </Typography>
+                        </div>
+                        <div className='work-img work-myfood'>
+                        </div>
+                    </div>
                 </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
@@ -93,18 +105,47 @@ export default function CustomizedAccordions() {
                     <Typography><span>Catshop</span></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                        Catshop est un faux site e-commerce réalisé avec Symfony. Le but était un entraînement pour apprendre à enregistrer des données en session, les retrouver après login mais aussi de créer un tunnel d'achat (jusqu'à un faux procédé de paiement).
-                        <br />
-                        <br />
-                        <a href='https://pydonze.fr/catshop/public/' target='_blank'>Visiter le site</a>
-                        <br />
-                        <a href='https://github.com/pierreyvesdonze/catshop' target='_blank'>Visiter le dépôt Github</a>
-                    </Typography>
+                    <div className="flex-work">
+                        <div className="flex-typography">
+                            <Typography>
+                                Catshop est un faux site e-commerce réalisé avec Symfony. Le but était un entraînement pour apprendre à enregistrer des données en session, les retrouver après login mais aussi de créer un tunnel d'achat (jusqu'à un faux procédé de paiement).
+                                <br />
+                                <br />
+                                <a href='https://pydonze.fr/catshop/public/' target='_blank'>Visiter le site</a>
+                                <br />
+                                <a href='https://github.com/pierreyvesdonze/catshop' target='_blank'>Visiter le dépôt Github</a>
+                            </Typography>
+                        </div>
+                        <div className='work-img work-catshop'>
+                        </div>
+                    </div>
                 </AccordionDetails>
             </Accordion>
             <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
                 <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
+                    <Typography><span>My contacts</span></Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <div className="flex-work">
+                        <div className="flex-typography">
+                            <Typography>
+                                Simple application réalisée avec Symfony, permettant de créer, gérer des contacts et de les exporter (emails seulement) par catégorie en .csv.
+                                <br />
+                                <br />
+                                <a href='https://pydonze.fr/mycontacts/public/' target='_blank'>Visiter le site</a>
+                                <br />
+                                <a href='https://github.com/pierreyvesdonze/mycontacts' target='_blank'>Visiter le dépôt Github</a>
+                                <br />
+                                <br />
+                            </Typography>
+                        </div>
+                        <div className='work-img work-mycontacts'>
+                        </div>
+                    </div>
+                </AccordionDetails>
+            </Accordion>
+            <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+                <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
                     <Typography><span>Ce portfolio</span></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
