@@ -54,31 +54,53 @@ export default function CustomizedAccordions() {
             <h1>Réalisations</h1>
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" className="accordion-summary">
-                    <Typography><span>Petit Foetus</span></Typography>
+                    <Typography><span>IMG Reducer</span></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <div className="flex-work">
                         <div className="flex-typography">
                             <Typography>
-                                Démo réalisée en Symfony pour une artiste tatoueuse. L'application dispose d'un back-office pour que l'utilisateur puisse gérer ses images et ses données (le back-office n'est pas accessible publiquement).
+                                Application permettant de réduire la taille d'une image selon une taille personnalisée
+                                <br />
+                                <br />
+                                <a href="https://pydonze.fr/imgreducer/public" target='_blank'>Lien vers le site</a>
+                                <br />
+                                <a href="https://github.com/pierreyvesdonze/imgreducer" target='_blank' className='github-link'>Lien vers le dépôt Github</a>
+                            </Typography>
+                        </div>
+                        <div className='work-img work-imgreducer'>
+                        </div>
+                    </div>
+                </AccordionDetails>
+            </Accordion>
+            
+            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                <AccordionSummary aria-controls="panel2d-content" id="panel2d-header" className="accordion-summary">
+                    <Typography><span>My Market</span></Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <div className="flex-work">
+                        <div className="flex-typography">
+                            <Typography>
+                                Démo de site e-commerce avec back-office permettant de gérer les produits, les commandes, les clients... L'application utilise l'api Stripe pour les paiements.
 
                                 <br />
                                 <br />
                                 Le site dispose aussi d'un convertisseur d'images afin de contrôler, réduire et optimiser la taille des fichiers envoyés.
                                 <br />
                                 <br />
-                                <a href="https://pydonze.fr/foetus/public/home" target='_blank'>Lien vers le site</a>
+                                <a href="https://pydonze.fr/mymarket/public" target='_blank'>Lien vers le site</a>
                                 <br />
-                                <a href="https://github.com/pierreyvesdonze/foetus" target='_blank' className='github-link'>Lien vers le dépôt Github</a>
                             </Typography>
                         </div>
-                        <div className='work-img work-foetus'>
+                        <div className='work-img work-mymarket'>
                         </div>
                     </div>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+
+            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+                <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
                     <Typography><span>MyFood</span></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -100,29 +122,9 @@ export default function CustomizedAccordions() {
                     </div>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                    <Typography><span>Catshop</span></Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <div className="flex-work">
-                        <div className="flex-typography">
-                            <Typography>
-                                Catshop est un faux site e-commerce réalisé avec Symfony. Le but était un entraînement pour apprendre à enregistrer des données en session, les retrouver après login mais aussi de créer un tunnel d'achat (jusqu'à un faux procédé de paiement).
-                                <br />
-                                <br />
-                                <a href='https://pydonze.fr/catshop/public/' target='_blank'>Visiter le site</a>
-                                <br />
-                                <a href='https://github.com/pierreyvesdonze/catshop' target='_blank'>Visiter le dépôt Github</a>
-                            </Typography>
-                        </div>
-                        <div className='work-img work-catshop'>
-                        </div>
-                    </div>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
-                <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
+           
+            <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+                <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
                     <Typography><span>My contacts</span></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -144,8 +146,8 @@ export default function CustomizedAccordions() {
                     </div>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
-                <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
+            <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+                <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
                     <Typography><span>Ce portfolio</span></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
