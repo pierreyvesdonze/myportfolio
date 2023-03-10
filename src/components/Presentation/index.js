@@ -20,7 +20,7 @@ export default function Presentation() {
                             Genre : <span>masculin</span>
                         </li>
                         <li>
-                            Âge : <span>39 ans</span>
+                            Âge : <span>40 ans</span>
                         </li>
                         <li>
                             Localisation : <span>Nancy (54) ou Full Remote</span>
