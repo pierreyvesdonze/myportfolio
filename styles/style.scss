@@ -6,19 +6,22 @@ VARIABLES
 ******************************************
 */
 :root {
-    --body-bg: linear-gradient(180deg, #abbed4 22%, #283f53 100%);
+    --body-bg: linear-gradient(180deg, #99c1ab 0%, #4a8094 100%);
+
     --main-color: white;
-    --primary-color: #1f2b3d;
-    --semi-transparent: rgba(255, 255, 255, 0.137);
+    --primary-color: #4c555a;
+    --secondary-color: #9baab27c;
+    --font-color-span: #5c5f99;
 }
 /*
 ******************************************
 GENERAL
 ******************************************
 */
+
 html {
-    overflow: hidden;
-    height: 100vh;
+    overflow-y: hidden;
+    height: 105vh;
     background: var(--body-bg);
 }
 
@@ -28,6 +31,15 @@ body {
 
 ul li {
     list-style-type: none;
+}
+
+a {
+    font-weight: 400;
+    color: var(--primary-color);
+    text-decoration: none;
+    :visited {
+        color: var(--primary-color);
+    }
 }
 
 h1,
@@ -54,13 +66,13 @@ APP
 ******************************************
 */
 .app {
+    height: 80vh;
     overflow-y: auto;
     max-width: 65%;
     margin: auto;
     border: solid 2px var(--main-color);
     border-radius: 10px;
     margin-top: 7%;
-    height: 80vh;
 
     @include xs {
         border: none;
@@ -79,6 +91,18 @@ APP
 PRESENTATION
 ******************************************
 */
+
+.presentation {
+    @include xs {
+        height: 800px !important;
+        overflow-y: scroll;
+    }
+    @include sm {
+        height: 800px !important;
+        overflow-y: scroll;
+    }
+}
+
 .presentation-title {
     text-align: center;
     font-weight: 400;
@@ -88,4 +112,309 @@ PRESENTATION
     font-size: 1.3em !important;
     line-height: 2em;
     font-weight: 400;
+}
+
+/*
+***********************************
+SECTION SKILLS
+***********************************
+*/
+
+.skills-buttons-container {
+    display: flex;
+    flex-direction: column;
+    &:hover {
+        background-color: var(--background-section-skills);
+    }
+}
+
+.specs {
+    display: flex;
+    justify-content: space-between;
+    @include xs {
+        padding-top: 10% !important;
+    }
+    @include sm {
+        padding-top: 10% !important;
+    }
+}
+
+/*BUTTONS*/
+.custom-btn {
+    background: transparent;
+    padding: 11px;
+    border: solid 1px white;
+    border-radius: 6px;
+    a {
+        &:hover {
+            color: white;
+            transition: ease-in .2s;
+        }
+    }
+}
+
+.specs button {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    box-shadow: inset 0px 0px 12px 3px #140605;
+    transition: all 0.1s ease-in-out;
+    @include xs {
+        width: 50px;
+        height: 50px;
+    }
+    @include sm {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.specs button:focus {
+    box-shadow: inset 0px 0px 4px 2px #140605;
+    background-color: var(--secondary-color);
+    transition: all 0.1s ease-in-out;
+    animation: flash 2s;
+}
+
+/*description*/
+.description-specs {
+    display: flex;
+    margin-top: 32px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 600px;
+    height: 400px;
+}
+
+.description ul {
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.description ul li {
+    font-size: 2em;
+    font-weight: 200;
+    transition: all 4s ease-in-out;
+    color: var(--font-color-text-light);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.gear,
+.heart,
+.brain,
+.tongue,
+.muscle {
+    width: 100px;
+    height: 100px;
+}
+
+.muscle {
+    background: url(../images/muscle.png) no-repeat;
+    background-size: contain;
+}
+
+.tongue {
+    background: url(../images/tongue.png) no-repeat;
+    background-size: contain;
+}
+
+.gear {
+    background: url(../images/gear.png) no-repeat;
+    background-size: contain;
+}
+
+.heart {
+    background: url(../images/heart.png) no-repeat;
+    background-size: contain;
+}
+
+.brain {
+    background: url(../images/brain.png) no-repeat;
+    background-size: contain;
+}
+
+/*
+***********************************
+SECTION CV
+***********************************
+*/
+
+#cvScrollspy {
+    display: flex;
+    &:hover {
+        background-color: var(--background-section-cv);
+    }
+    @include xs {
+        height: 1200px;
+        flex-direction: column;
+        overflow-y: scroll;
+        margin-bottom: 100px;
+    }
+    
+    @include sm {
+        height: 1200px;
+        flex-direction: column;
+        overflow-y: scroll;
+        margin-bottom: 100px;
+    }
+}
+
+#cvScrollspy h2 {
+    font-size: 1.2em;
+    color: var(--font-color-text-light);
+}
+
+#cvScrollspy h3 {
+    font-size: 1.2em;
+}
+
+#cvScrollspy h3:nth-of-type(1) {
+    @include xs {
+        margin-top: 2em;
+    }
+    @include sm {
+        margin-top: 2em;
+    }
+}
+
+.cv-left,
+.cv-right {
+    width: 50%;
+    flex-wrap: wrap;
+    color: var(--font-color-text-light);
+    font-weight: 200;
+    font-size: 1.2em;
+    h3 {
+        color: var(--primary-color) !important;
+    }
+
+    @include xs {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    @include sm {
+        width: 100%;
+        font-size: 1em;
+    }
+}
+
+.cv-left span,
+.cv-right span {
+    color: var(--font-color-span);
+    font-size: 1.3em;
+    font-weight: 400;
+    @include xs {
+        font-size: 1.1em;
+    }
+    @include sm {
+        font-size: 1.1em;
+    }
+}
+
+.main-cv a {
+    color: var(--font-color-link);
+    text-shadow: 1px 1px 3px black;
+    font-size: 1.2em;
+    font-weight: 200;
+    &:hover {
+        color: var(--font-color-span);
+    }
+}
+
+/*
+***********************************
+SECTION WORK
+***********************************
+*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.work-link {
+    margin-right: 1.5em;
+}
+.MuiPaper-root {
+    background: transparent !important;
+}
+
+.flex-work {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.github-link {
+    margin-top: 10px;
+}
+
+.flex-typography {
+    width: 50%;
+    text-align: justify;
+    @include sm {
+        width: 100%;
+    }
+    @include xs {
+        width: 100%;
+    }
+}
+
+.work-img {
+    width: 50%;
+    margin-left: 10%;
+     @include sm {
+        display: none;
+    }
+    @include xs {
+        display: none;
+    } 
+}
+
+.work-imgreducer {
+    background: url(../images/imgreducer.png) no-repeat;
+    background-size: cover;
+    
+}
+.work-mymarket {
+    background: url(../images/mymarket.png) no-repeat;
+    background-size: cover;
+    
+}
+.work-myfood {
+    background: url(../images/myfood.png) no-repeat;
+    background-size: cover;
+}
+.work-catshop {
+    background: url(../images/catshop.png) no-repeat;
+    background-size: cover;
+}
+.work-mycontacts {
+    background: url(../images/mycontacts.png) no-repeat;
+    background-size: cover;
+}
+
+
+/*
+***********************************
+SECTION CONTACT
+***********************************
+*/
+.card {
+    background-color: var(--secondary-color) !important;
+    margin-top: 20%;
+    @include md {
+        margin-top: 10%;
+    }
+    @include lg {
+        margin-top: 10%;
+    }
+    @include xl {
+        margin-top: 10%;
+    }
 }
