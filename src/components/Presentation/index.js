@@ -26,7 +26,7 @@ export default function Presentation() {
                             Localisation : <span>Nancy (54) ou Full Remote</span>
                         </li>
                         <li>
-                            Spécialisation : <span>Symfony (React en cours)</span>
+                            Spécialisation : <span>Symfony</span>
                         </li>
                         <li>
                             Expérience : <span>Autodidacte + en entreprise</span>
