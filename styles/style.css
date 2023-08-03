@@ -255,6 +255,10 @@ SECTION SKILLS
 SECTION CV
 ***********************************
 */
+.main-cv .cv-left ul li {
+  font-weight: 400;
+}
+
 #cvScrollspy {
   display: flex;
 }
