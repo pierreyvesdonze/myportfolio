@@ -6,9 +6,23 @@ export default function CV() {
             <div class="cv-left">
                 <h3>Formation</h3>
                 <a href="https://oclock.io" target="_blank">O'clock</a>
-                <br />
-                <br />
+                <ul>
+                    <li>
+                        700h intensives en téléprésentiel
+                    </li>
+                    <li>
+                        3 mois de socle : HTML/CSS/PHP/JS
+                    </li>
+                    <li>
+                        100 challenges
+                    </li>
+                    <li>
+                        1 mois de spécialisation : Symfony
+                    </li>
+                </ul>
 
+                <br />
+                
                 <h3>Connaissances en qualité de développeur web</h3>
                 <span>Languages</span> <br />
                 HTML5, CSS3, PHP7/8, SQL, JS
