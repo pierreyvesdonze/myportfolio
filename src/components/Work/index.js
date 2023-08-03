@@ -51,31 +51,9 @@ export default function CustomizedAccordions() {
 
     return (
         <div>
-            <h1>Réalisations</h1>
+            <h1>Réalisations</h1>           
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" className="accordion-summary">
-                    <Typography><span>IMG Reducer</span></Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    <div className="flex-work">
-                        <div className="flex-typography">
-                            <Typography>
-                                Application permettant de réduire la taille d'une image selon une taille personnalisée
-                                <br />
-                                <br />
-                                <a href="https://pydonze.fr/imgreducer/public" target='_blank'>Lien vers le site</a>
-                                <br />
-                                <a href="https://github.com/pierreyvesdonze/imgreducer" target='_blank' className='github-link'>Lien vers le dépôt Github</a>
-                            </Typography>
-                        </div>
-                        <div className='work-img work-imgreducer'>
-                        </div>
-                    </div>
-                </AccordionDetails>
-            </Accordion>
-            
-            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                <AccordionSummary aria-controls="panel2d-content" id="panel2d-header" className="accordion-summary">
                     <Typography><span>My Market</span></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -89,7 +67,7 @@ export default function CustomizedAccordions() {
                                 Le site dispose aussi d'un convertisseur d'images afin de contrôler, réduire et optimiser la taille des fichiers envoyés.
                                 <br />
                                 <br />
-                                <a href="https://pydonze.fr/mymarket/public" target='_blank'>Lien vers le site</a>
+                                <a href="https://pydonze.fr/mymarket/public" target='_blank' rel="noreferrer">Lien vers le site</a>
                                 <br />
                             </Typography>
                         </div>
@@ -99,25 +77,45 @@ export default function CustomizedAccordions() {
                 </AccordionDetails>
             </Accordion>
 
-            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
-                <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                    <Typography><span>MyFood</span></Typography>
+            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                <AccordionSummary aria-controls="panel12-content" id="panel2d-header" className="accordion-summary">
+                    <Typography><span>Cooking</span></Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <div className="flex-work">
                         <div className="flex-typography">
                             <Typography>
-                                Réalisé avec Symfony et Javascript ce site permet à l'utilisateur enregistré de créer ses propres recettes de cuisine, de créer des liste de courses et de rechercher des recettes.
-                                <br />
-                                Plusieurs fonctions de recherche ont été implémentées, dont une fonction de recherche par ingrédient pour que l'utilisateur puisse trouver des recettes en fonction de ce dont il dispose (dans cette démo les ingrédients sont très limités).
+                                Un site responsive de recettes de cuisine, un accès ADMIN permet d'ajouter les recettes en base.
                                 <br />
                                 <br />
-                                <a href='https://pydonze.fr/myfood/public/' target='_blank'>Visiter le site</a>
+                                <a href="https://pydonze.fr/cooking/public" target='_blank' rel="noreferrer">Lien vers le site</a>
                                 <br />
-                                <a href='https://github.com/pierreyvesdonze/myfood' target='_blank'>Visiter le dépôt Github</a>
+                                <a href="https://github.com/pierreyvesdonze/cooking" target='_blank' rel="noreferrer" className='github-link'>Lien vers le dépôt Github</a>
                             </Typography>
                         </div>
-                        <div className='work-img work-myfood'>
+                        <div className='work-img work-cooking'>
+                        </div>
+                    </div>
+                </AccordionDetails>
+            </Accordion>
+
+            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+                <AccordionSummary aria-controls="panel3d-content" id="panel3d-header" className="accordion-summary">
+                    <Typography><span>IMG Reducer</span></Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <div className="flex-work">
+                        <div className="flex-typography">
+                            <Typography>
+                                Application permettant de réduire la taille d'une image selon une taille personnalisée
+                                <br />
+                                <br />
+                                <a href="https://pydonze.fr/imgreducer/public" target='_blank' rel="noreferrer">Lien vers le site</a>
+                                <br />
+                                <a href="https://github.com/pierreyvesdonze/imgreducer" target='_blank' rel="noreferrer" className='github-link'>Lien vers le dépôt Github</a>
+                            </Typography>
+                        </div>
+                        <div className='work-img work-imgreducer'>
                         </div>
                     </div>
                 </AccordionDetails>
@@ -134,9 +132,9 @@ export default function CustomizedAccordions() {
                                 Simple application réalisée avec Symfony, permettant de créer, gérer des contacts et de les exporter (emails seulement) par catégorie en .csv.
                                 <br />
                                 <br />
-                                <a href='https://pydonze.fr/mycontacts/public/' target='_blank'>Visiter le site</a>
+                                <a href='https://pydonze.fr/mycontacts/public/' target='_blank' rel="noreferrer">Visiter le site</a>
                                 <br />
-                                <a href='https://github.com/pierreyvesdonze/mycontacts' target='_blank'>Visiter le dépôt Github</a>
+                                <a href='https://github.com/pierreyvesdonze/mycontacts' target='_blank' rel="noreferrer">Visiter le dépôt Github</a>
                                 <br />
                                 <br />
                             </Typography>

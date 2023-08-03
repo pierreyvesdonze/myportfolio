@@ -41,7 +41,7 @@ export default function BasicCard() {
                 </CardContent>
             </Card>
 
-            <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
+           {/*  <Box sx={{ height: 320, transform: 'translateZ(0px)', flexGrow: 1 }}>
                 <SpeedDial
                     ariaLabel="SpeedDial basic example"
                     sx={{ position: 'absolute', bottom: 90, right: 16 }}
@@ -56,7 +56,7 @@ export default function BasicCard() {
                         />
                     ))}
                 </SpeedDial>
-            </Box>
+            </Box> */}
         </>
     );
 }

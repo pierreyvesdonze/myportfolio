@@ -186,8 +186,7 @@ SECTION SKILLS
   box-shadow: inset 0px 0px 4px 2px #140605;
   background-color: var(--secondary-color);
   transition: all 0.1s ease-in-out;
-  -webkit-animation: flash 2s;
-          animation: flash 2s;
+  animation: flash 2s;
 }
 
 /*description*/
@@ -313,14 +312,14 @@ SECTION CV
 }
 @media (min-width: 300px) and (max-width: 576px) {
   .cv-left,
-.cv-right {
+  .cv-right {
     width: 100%;
     font-size: 1em;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .cv-left,
-.cv-right {
+  .cv-right {
     width: 100%;
     font-size: 1em;
   }
@@ -334,13 +333,13 @@ SECTION CV
 }
 @media (min-width: 300px) and (max-width: 576px) {
   .cv-left span,
-.cv-right span {
+  .cv-right span {
     font-size: 1.1em;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .cv-left span,
-.cv-right span {
+  .cv-right span {
     font-size: 1.1em;
   }
 }
@@ -424,13 +423,8 @@ SECTION WORK
   background-size: cover;
 }
 
-.work-myfood {
-  background: url(../images/myfood.png) no-repeat;
-  background-size: cover;
-}
-
-.work-catshop {
-  background: url(../images/catshop.png) no-repeat;
+.work-cooking {
+  background: url(../images/cooking.png) no-repeat;
   background-size: cover;
 }
 
