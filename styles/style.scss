@@ -244,10 +244,6 @@ SECTION CV
 ***********************************
 */
 
-.main-cv .cv-left ul li {
-    font-weight: 400;
-}
-
 #cvScrollspy {
     display: flex;
     &:hover {
@@ -392,6 +388,10 @@ SECTION WORK
 }
 .work-cooking {
     background: url(../images/cooking.png) no-repeat;
+    background-size: cover;
+}
+.work-onfire {
+    background: url(../images/onfire.png) no-repeat;
     background-size: cover;
 }
 .work-mycontacts {
